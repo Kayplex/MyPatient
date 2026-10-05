@@ -1,0 +1,12 @@
+{
+  "name": "Xeniun",
+  "short_name": "Xeniun",
+  "description": "Investigación, desarrollo e innovación tecnológica",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05060a",
+  "theme_color": "#05060a",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "xeniun-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Xeniun corporate website — static site with a Three.js scene",
+  "scripts": {
+    "build": "esbuild src/scene.js --bundle --minify --format=esm --target=es2020 --legal-comments=none --outfile=assets/js/scene.min.js",
+    "dev": "npm run build && npx --yes serve -l 4173 ."
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "three": "^0.186.1"
+  }
+}

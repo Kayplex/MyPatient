@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Xeniun — Investigación, Desarrollo e Innovación Tecnológica</title>
+  <meta name="description" content="Xeniun es una firma de I+D+i tecnológica en Santo Domingo. Software e inteligencia artificial, ingeniería eléctrica y telecomunicaciones, energía, industria y consultoría tecnológica.">
+  <link rel="canonical" href="https://xeniun.com/">
+  <meta name="theme-color" content="#05060a">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Xeniun">
+  <meta property="og:url" content="https://xeniun.com/">
+  <meta property="og:title" content="Xeniun — Convertimos investigación en ventaja competitiva">
+  <meta property="og:description" content="I+D+i tecnológica: software e IA, ingeniería eléctrica y telecomunicaciones, energía, industria y consultoría.">
+  <meta property="og:image" content="https://xeniun.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_DO">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="modulepreload" href="assets/js/scene.min.js">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Xeniun",
+    "legalName": "Xeniun SRL",
+    "url": "https://xeniun.com/",
+    "logo": "https://xeniun.com/assets/img/favicon.svg",
+    "description": "Firma de investigación, desarrollo e innovación tecnológica: software e inteligencia artificial, ingeniería eléctrica y telecomunicaciones, energía, industria y consultoría tecnológica.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santo Domingo",
+      "addressCountry": "DO"
+    },
+    "areaServed": "Worldwide",
+    "knowsAbout": ["Investigación y desarrollo", "Inteligencia artificial", "Desarrollo de software", "Ingeniería eléctrica", "Telecomunicaciones", "Energía", "Automatización industrial", "Consultoría tecnológica"]
+  }
+  </script>
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <svg viewBox="0 0 32 32"><use href="#mark"/></svg>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <div class="backdrop" aria-hidden="true"></div>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="mark-grad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#9aa6ff"/>
+        <stop offset="1" stop-color="#5ce1e6"/>
+      </linearGradient>
+      <symbol id="mark" viewBox="0 0 32 32">
+        <rect x="1.5" y="1.5" width="29" height="29" rx="8" fill="none" stroke="url(#mark-grad)" stroke-width="1.4"/>
+        <path d="M10.5 10.5 21.5 21.5M21.5 10.5 10.5 21.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="25" cy="7" r="1.8" fill="#5ce1e6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#top" aria-label="Xeniun — inicio">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#mark"/></svg>
+        <span class="brand__word">XENIUN</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="#capacidades" data-i18n="nav.capabilities">Capacidades</a>
+        <a href="#metodo" data-i18n="nav.method">Método</a>
+        <a href="#sectores" data-i18n="nav.sectors">Sectores</a>
+        <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" class="lang__btn" data-lang="es" aria-pressed="true">ES</button>
+          <span class="lang__sep" aria-hidden="true">/</span>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn--small btn--ghost header-cta" href="#contacto">
+          <span data-i18n="cta.talk">Hablemos</span>
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:menu.open" aria-label="Abrir menú">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Móvil">
+      <a href="#capacidades"><span class="mono">01</span><span data-i18n="nav.capabilities">Capacidades</span></a>
+      <a href="#metodo"><span class="mono">02</span><span data-i18n="nav.method">Método</span></a>
+      <a href="#sectores"><span class="mono">03</span><span data-i18n="nav.sectors">Sectores</span></a>
+      <a href="#nosotros"><span class="mono">04</span><span data-i18n="nav.about">Nosotros</span></a>
+      <a href="#contacto"><span class="mono">05</span><span data-i18n="nav.contact">Contacto</span></a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang__btn" data-lang="es" aria-pressed="true">ES</button>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <p class="mono">Santo Domingo · 18.4861° N 69.9312° W</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top" data-scene="0">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow">
+            <span class="pulse" aria-hidden="true"></span>
+            <span data-i18n="hero.eyebrow">Investigación · Desarrollo · Innovación</span>
+          </p>
+          <h1 class="hero__title" data-i18n-html="hero.title">
+            <span class="line"><span>Convertimos</span></span>
+            <span class="line"><span>investigación en</span></span>
+            <span class="line"><span class="grad">ventaja competitiva.</span></span>
+          </h1>
+          <p class="hero__lead" data-i18n="hero.lead">Xeniun es una firma de I+D+i tecnológica. Unimos software, inteligencia artificial e ingeniería eléctrica, de telecomunicaciones y energía para organizaciones que necesitan ir un paso adelante.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary magnetic" href="#contacto">
+              <span data-i18n="hero.cta1">Iniciar un proyecto</span>
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn--ghost magnetic" href="#capacidades">
+              <span data-i18n="hero.cta2">Explorar capacidades</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__spec">
+        <dl class="spec">
+          <div><dt data-i18n="hero.spec.k1">Núcleo</dt><dd data-i18n="hero.spec.v1">I+D+i tecnológico</dd></div>
+          <div><dt data-i18n="hero.spec.k2">Prácticas</dt><dd data-i18n="hero.spec.v2">5 disciplinas integradas</dd></div>
+          <div><dt data-i18n="hero.spec.k3">Base</dt><dd data-i18n="hero.spec.v3">Santo Domingo, RD</dd></div>
+          <div><dt data-i18n="hero.spec.k4">Coordenadas</dt><dd>18.4861° N · 69.9312° W</dd></div>
+        </dl>
+        <a class="scroll-cue" href="#manifiesto">
+          <span class="scroll-cue__line" aria-hidden="true"></span>
+          <span data-i18n="hero.scroll">Desliza para explorar</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto" id="manifiesto" data-scene="1">
+      <div class="container">
+        <p class="label" data-reveal><span class="mono">(00)</span> <span data-i18n="manifesto.label">Manifiesto</span></p>
+        <p class="manifesto__text" data-split data-i18n="manifesto.text">No vendemos tecnología. Diseñamos el próximo estado de tu organización: investigamos el problema, construimos la solución y la llevamos a operación, con rigor de laboratorio y disciplina de ingeniería.</p>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <ul class="marquee__list">
+          <li data-i18n="mq.1">Investigación aplicada</li>
+          <li data-i18n="mq.2">Inteligencia artificial</li>
+          <li data-i18n="mq.3">Software a medida</li>
+          <li data-i18n="mq.4">Ingeniería eléctrica</li>
+          <li data-i18n="mq.5">Telecomunicaciones</li>
+          <li data-i18n="mq.6">Energía</li>
+          <li data-i18n="mq.7">Automatización industrial</li>
+          <li data-i18n="mq.8">IoT</li>
+          <li data-i18n="mq.9">Transformación digital</li>
+        </ul>
+        <ul class="marquee__list">
+          <li data-i18n="mq.1">Investigación aplicada</li>
+          <li data-i18n="mq.2">Inteligencia artificial</li>
+          <li data-i18n="mq.3">Software a medida</li>
+          <li data-i18n="mq.4">Ingeniería eléctrica</li>
+          <li data-i18n="mq.5">Telecomunicaciones</li>
+          <li data-i18n="mq.6">Energía</li>
+          <li data-i18n="mq.7">Automatización industrial</li>
+          <li data-i18n="mq.8">IoT</li>
+          <li data-i18n="mq.9">Transformación digital</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CAPABILITIES -->
+    <section class="capabilities" id="capacidades" aria-labelledby="cap-title">
+      <div class="container capabilities__head">
+        <p class="label" data-reveal><span class="mono">(01)</span> <span data-i18n="cap.label">Capacidades</span></p>
+        <h2 class="h2" id="cap-title" data-reveal data-i18n-html="cap.title">Cinco disciplinas.<br>Un solo equipo responsable.</h2>
+      </div>
+
+      <article class="cap" data-scene="2">
+        <div class="container">
+          <div class="cap__body">
+            <p class="cap__index mono" data-reveal><span>01</span> / 05</p>
+            <h3 class="cap__title" data-reveal data-i18n="cap1.title">Investigación, Desarrollo e Innovación</h3>
+            <p class="cap__text" data-reveal data-i18n="cap1.text">Investigación aplicada que se convierte en producto. Exploramos, validamos y transferimos tecnología desde la hipótesis hasta el prototipo funcional.</p>
+            <ul class="tags" data-reveal>
+              <li data-i18n="cap1.t1">Investigación aplicada</li>
+              <li data-i18n="cap1.t2">Prototipado rápido</li>
+              <li data-i18n="cap1.t3">Pruebas de concepto</li>
+              <li data-i18n="cap1.t4">Transferencia tecnológica</li>
+              <li data-i18n="cap1.t5">Vigilancia tecnológica</li>
+              <li data-i18n="cap1.t6">Propiedad intelectual</li>
+            </ul>
+            <p class="fig mono" data-reveal data-i18n="cap1.fig">Fig. 01 — Doble hélice · Investigación aplicada</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap" data-scene="3">
+        <div class="container">
+          <div class="cap__body">
+            <p class="cap__index mono" data-reveal><span>02</span> / 05</p>
+            <h3 class="cap__title" data-reveal data-i18n="cap2.title">Software &amp; Inteligencia Artificial</h3>
+            <p class="cap__text" data-reveal data-i18n="cap2.text">Plataformas a medida, modelos de IA y automatización inteligente, diseñados para escalar con tu operación y producir decisiones medibles.</p>
+            <ul class="tags" data-reveal>
+              <li data-i18n="cap2.t1">Software a medida</li>
+              <li data-i18n="cap2.t2">Machine learning</li>
+              <li data-i18n="cap2.t3">Visión por computadora</li>
+              <li data-i18n="cap2.t4">IA generativa y agentes</li>
+              <li data-i18n="cap2.t5">Analítica de datos</li>
+              <li data-i18n="cap2.t6">Integración de sistemas</li>
+            </ul>
+            <p class="fig mono" data-reveal data-i18n="cap2.fig">Fig. 02 — Red neuronal · Software &amp; IA</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap" data-scene="4">
+        <div class="container">
+          <div class="cap__body">
+            <p class="cap__index mono" data-reveal><span>03</span> / 05</p>
+            <h3 class="cap__title" data-reveal data-i18n="cap3.title">Ingeniería Eléctrica &amp; Telecomunicaciones</h3>
+            <p class="cap__text" data-reveal data-i18n="cap3.text">Diseño e implementación de sistemas eléctricos, electrónicos y de comunicaciones bajo estándares internacionales, con foco absoluto en la confiabilidad.</p>
+            <ul class="tags" data-reveal>
+              <li data-i18n="cap3.t1">Diseño eléctrico</li>
+              <li data-i18n="cap3.t2">Electrónica y sistemas embebidos</li>
+              <li data-i18n="cap3.t3">Redes y fibra óptica</li>
+              <li data-i18n="cap3.t4">Radiofrecuencia</li>
+              <li data-i18n="cap3.t5">Infraestructura crítica</li>
+              <li data-i18n="cap3.t6">Cumplimiento normativo</li>
+            </ul>
+            <p class="fig mono" data-reveal data-i18n="cap3.fig">Fig. 03 — Campo de señal · Eléctrica &amp; Telecom</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap" data-scene="5">
+        <div class="container">
+          <div class="cap__body">
+            <p class="cap__index mono" data-reveal><span>04</span> / 05</p>
+            <h3 class="cap__title" data-reveal data-i18n="cap4.title">Energía &amp; Industria</h3>
+            <p class="cap__text" data-reveal data-i18n="cap4.text">Soluciones que reducen costos y riesgos operativos: eficiencia energética, renovables, automatización industrial e IoT para plantas conectadas.</p>
+            <ul class="tags" data-reveal>
+              <li data-i18n="cap4.t1">Eficiencia energética</li>
+              <li data-i18n="cap4.t2">Energías renovables</li>
+              <li data-i18n="cap4.t3">Automatización industrial</li>
+              <li data-i18n="cap4.t4">IoT industrial</li>
+              <li data-i18n="cap4.t5">SCADA y telemetría</li>
+              <li data-i18n="cap4.t6">Mantenimiento predictivo</li>
+            </ul>
+            <p class="fig mono" data-reveal data-i18n="cap4.fig">Fig. 04 — Reactor toroidal · Energía &amp; Industria</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap" data-scene="6">
+        <div class="container">
+          <div class="cap__body">
+            <p class="cap__index mono" data-reveal><span>05</span> / 05</p>
+            <h3 class="cap__title" data-reveal data-i18n="cap5.title">Consultoría Tecnológica</h3>
+            <p class="cap__text" data-reveal data-i18n="cap5.text">Acompañamos a la alta dirección en sus decisiones tecnológicas: estrategia, arquitectura, transformación digital y gestión de proyectos complejos.</p>
+            <ul class="tags" data-reveal>
+              <li data-i18n="cap5.t1">Estrategia tecnológica</li>
+              <li data-i18n="cap5.t2">Transformación digital</li>
+              <li data-i18n="cap5.t3">Arquitectura de soluciones</li>
+              <li data-i18n="cap5.t4">Ciberseguridad</li>
+              <li data-i18n="cap5.t5">Gestión de proyectos</li>
+              <li data-i18n="cap5.t6">Due diligence técnica</li>
+            </ul>
+            <p class="fig mono" data-reveal data-i18n="cap5.fig">Fig. 05 — Retícula estructural · Consultoría</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- METHOD -->
+    <section class="method section" id="metodo" data-scene="7" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="label" data-reveal><span class="mono">(02)</span> <span data-i18n="method.label">Método</span></p>
+          <h2 class="h2" id="method-title" data-reveal data-i18n-html="method.title">Del laboratorio<br>a la operación.</h2>
+          <p class="section__intro" data-reveal data-i18n="method.intro">Un proceso diseñado para reducir la incertidumbre en cada etapa. Medimos la madurez de cada solución con la escala TRL (Technology Readiness Level), el estándar que utilizan la NASA y la Unión Europea.</p>
+        </div>
+
+        <div class="trl" data-reveal>
+          <p class="trl__label mono" data-i18n="method.trl">Nivel de madurez tecnológica · TRL</p>
+          <ol class="trl__scale" aria-hidden="true">
+            <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li>
+          </ol>
+          <div class="trl__bar"><span></span></div>
+        </div>
+
+        <ol class="steps">
+          <li class="step card" data-reveal style="--d:0">
+            <span class="step__n mono">01</span>
+            <h3 class="step__title" data-i18n="step1.title">Descubrir</h3>
+            <p data-i18n="step1.text">Diagnóstico del reto, objetivos de negocio, restricciones y criterios de éxito.</p>
+            <span class="step__trl mono">TRL 1–2</span>
+          </li>
+          <li class="step card" data-reveal style="--d:1">
+            <span class="step__n mono">02</span>
+            <h3 class="step__title" data-i18n="step2.title">Investigar</h3>
+            <p data-i18n="step2.text">Estado del arte, hipótesis y viabilidad técnica y económica.</p>
+            <span class="step__trl mono">TRL 2–3</span>
+          </li>
+          <li class="step card" data-reveal style="--d:2">
+            <span class="step__n mono">03</span>
+            <h3 class="step__title" data-i18n="step3.title">Prototipar</h3>
+            <p data-i18n="step3.text">Prueba de concepto y prototipo funcional validado con datos reales.</p>
+            <span class="step__trl mono">TRL 4–6</span>
+          </li>
+          <li class="step card" data-reveal style="--d:3">
+            <span class="step__n mono">04</span>
+            <h3 class="step__title" data-i18n="step4.title">Implementar</h3>
+            <p data-i18n="step4.text">Ingeniería de detalle, desarrollo, integración y puesta en marcha.</p>
+            <span class="step__trl mono">TRL 7–8</span>
+          </li>
+          <li class="step card" data-reveal style="--d:4">
+            <span class="step__n mono">05</span>
+            <h3 class="step__title" data-i18n="step5.title">Evolucionar</h3>
+            <p data-i18n="step5.text">Operación, soporte, medición de impacto y mejora continua.</p>
+            <span class="step__trl mono">TRL 9</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SECTORS -->
+    <section class="sectors section" id="sectores" data-scene="7" aria-labelledby="sectors-title">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="label" data-reveal><span class="mono">(03)</span> <span data-i18n="sectors.label">Sectores</span></p>
+            <h2 class="h2" id="sectors-title" data-reveal data-i18n-html="sectors.title">Tecnología aplicada<br>donde más importa.</h2>
+          </div>
+          <p class="section__intro" data-reveal data-i18n="sectors.intro">Llevamos soluciones de investigación a industrias donde la confiabilidad, la eficiencia y la seguridad no son opcionales.</p>
+        </div>
+
+        <ul class="sector-grid">
+          <li class="sector card" data-reveal style="--d:0">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+            <h3 data-i18n="sec1.title">Energía</h3>
+            <p data-i18n="sec1.text">Generación, distribución, renovables y eficiencia.</p>
+          </li>
+          <li class="sector card" data-reveal style="--d:1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13v9M8.5 22h7M12 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM7.8 15.2a6 6 0 0 1 0-8.4M16.2 6.8a6 6 0 0 1 0 8.4M5 18a10 10 0 0 1 0-14M19 4a10 10 0 0 1 0 14"/></svg>
+            <h3 data-i18n="sec2.title">Telecomunicaciones</h3>
+            <p data-i18n="sec2.text">Redes, conectividad e infraestructura de datos.</p>
+          </li>
+          <li class="sector card" data-reveal style="--d:2">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l6 4V10l6 4V4h6v17H3ZM7 17h2M12 17h2M17 17h1"/></svg>
+            <h3 data-i18n="sec3.title">Industria y manufactura</h3>
+            <p data-i18n="sec3.text">Automatización, IoT industrial y control de procesos.</p>
+          </li>
+          <li class="sector card" data-reveal style="--d:3">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M4 10h16M12 3l9 5H3l9-5ZM6 10v8M10 10v8M14 10v8M18 10v8"/></svg>
+            <h3 data-i18n="sec4.title">Sector público</h3>
+            <p data-i18n="sec4.text">Gobierno digital, infraestructura y servicios críticos.</p>
+          </li>
+          <li class="sector card" data-reveal style="--d:4">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h4l2-5 4 10 2-5h8"/></svg>
+            <h3 data-i18n="sec5.title">Salud</h3>
+            <p data-i18n="sec5.text">Plataformas clínicas, datos y dispositivos conectados.</p>
+          </li>
+          <li class="sector card" data-reveal style="--d:5">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18M7 15l4-4 3 3 6-7"/></svg>
+            <h3 data-i18n="sec6.title">Finanzas</h3>
+            <p data-i18n="sec6.text">Analítica, automatización y modelos de riesgo.</p>
+          </li>
+          <li class="sector card" data-reveal style="--d:6">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4ZM3 7v10l9 4 9-4V7M12 11v10"/></svg>
+            <h3 data-i18n="sec7.title">Logística</h3>
+            <p data-i18n="sec7.text">Trazabilidad, optimización de rutas y telemetría.</p>
+          </li>
+          <li class="sector card" data-reveal style="--d:7">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+            <h3 data-i18n="sec8.title">Academia e investigación</h3>
+            <p data-i18n="sec8.text">Alianzas de I+D, laboratorios y transferencia.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT / WHY -->
+    <section class="about section" id="nosotros" data-scene="7" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="label" data-reveal><span class="mono">(04)</span> <span data-i18n="about.label">Nosotros</span></p>
+          <h2 class="h2" id="about-title" data-reveal data-i18n-html="about.title">Rigor de laboratorio.<br>Velocidad de ejecución.</h2>
+        </div>
+
+        <div class="bento">
+          <div class="bento__hero card" data-reveal>
+            <div class="radar" aria-hidden="true">
+              <span></span><span></span><span></span><i></i>
+            </div>
+            <p class="mono bento__coord">18.4861° N · 69.9312° W</p>
+            <h3 data-i18n-html="about.big.title">Hecho en el Caribe.<br>Pensado para el mundo.</h3>
+            <p data-i18n="about.big.text">Desde Santo Domingo, Xeniun reúne ingenieros, científicos de datos y especialistas en energía y telecomunicaciones para diseñar tecnología con estándares internacionales.</p>
+          </div>
+          <div class="principle card" data-reveal style="--d:1">
+            <span class="mono principle__n">/01</span>
+            <h3 data-i18n="p1.title">Rigor científico</h3>
+            <p data-i18n="p1.text">Cada decisión se respalda con evidencia, datos y pruebas medibles.</p>
+          </div>
+          <div class="principle card" data-reveal style="--d:2">
+            <span class="mono principle__n">/02</span>
+            <h3 data-i18n="p2.title">Ingeniería de extremo a extremo</h3>
+            <p data-i18n="p2.text">Del hardware al software, de la idea a la operación: un solo equipo responsable.</p>
+          </div>
+          <div class="principle card" data-reveal style="--d:3">
+            <span class="mono principle__n">/03</span>
+            <h3 data-i18n="p3.title">Velocidad con método</h3>
+            <p data-i18n="p3.text">Prototipos en semanas, no en años, sin sacrificar calidad ni seguridad.</p>
+          </div>
+          <div class="principle card" data-reveal style="--d:4">
+            <span class="mono principle__n">/04</span>
+            <h3 data-i18n="p4.title">Confidencialidad y PI</h3>
+            <p data-i18n="p4.text">Protegemos tu propiedad intelectual y tus datos desde el primer día.</p>
+          </div>
+        </div>
+
+        <dl class="stats">
+          <div class="stat" data-reveal style="--d:0">
+            <dt class="stat__value"><span data-count="5">5</span></dt>
+            <dd data-i18n="stat1">áreas de práctica integradas</dd>
+          </div>
+          <div class="stat" data-reveal style="--d:1">
+            <dt class="stat__value"><span data-count="9">9</span></dt>
+            <dd data-i18n="stat2">niveles TRL, de la idea a la operación</dd>
+          </div>
+          <div class="stat" data-reveal style="--d:2">
+            <dt class="stat__value"><span data-count="2017" data-count-from="1990">2017</span></dt>
+            <dd data-i18n="stat3">el año en que comenzamos</dd>
+          </div>
+          <div class="stat" data-reveal style="--d:3">
+            <dt class="stat__value"><span data-count="360">360</span>°</dt>
+            <dd data-i18n="stat4">visión: hardware, software y estrategia</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contacto" data-scene="8" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__copy">
+          <p class="label" data-reveal><span class="mono">(05)</span> <span data-i18n="contact.label">Contacto</span></p>
+          <h2 class="h2" id="contact-title" data-reveal data-i18n-html="contact.title">¿Tienes un reto que todavía <span class="grad">no tiene solución?</span></h2>
+          <p class="section__intro" data-reveal data-i18n="contact.text">Cuéntanos qué quieres lograr. Un especialista de nuestro equipo analizará tu caso y te responderá personalmente.</p>
+
+          <ul class="contact__info" data-reveal>
+            <li>
+              <span class="mono" data-i18n="contact.write">Escríbenos</span>
+              <a class="contact__email" href="mailto:info@xeniun.com">info@xeniun.com</a>
+            </li>
+            <li>
+              <span class="mono" data-i18n="contact.where">Ubicación</span>
+              <span data-i18n="contact.city">Santo Domingo, República Dominicana</span>
+            </li>
+            <li>
+              <span class="mono" data-i18n="contact.follow">Síguenos</span>
+              <a href="https://www.linkedin.com/company/xeniun" target="_blank" rel="noopener">LinkedIn ↗</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form card" id="contact-form" data-mailto="info@xeniun.com" data-endpoint="" novalidate data-reveal>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name" data-i18n="form.name">Nombre</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-company" data-i18n="form.company">Empresa</label>
+              <input id="f-company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-email" data-i18n="form.email">Correo corporativo</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <fieldset class="field">
+            <legend data-i18n="form.area">Área de interés</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="area" value="I+D+i" checked><span data-i18n="form.a1">I+D+i</span></label>
+              <label class="chip"><input type="radio" name="area" value="Software & IA"><span data-i18n="form.a2">Software &amp; IA</span></label>
+              <label class="chip"><input type="radio" name="area" value="Eléctrica & Telecom"><span data-i18n="form.a3">Eléctrica &amp; Telecom</span></label>
+              <label class="chip"><input type="radio" name="area" value="Energía & Industria"><span data-i18n="form.a4">Energía &amp; Industria</span></label>
+              <label class="chip"><input type="radio" name="area" value="Consultoría"><span data-i18n="form.a5">Consultoría</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-message" data-i18n="form.message">¿Qué quieres lograr?</label>
+            <textarea id="f-message" name="message" rows="4" required></textarea>
+          </div>
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span data-i18n="form.consent">Acepto que Xeniun use estos datos únicamente para responder a mi solicitud.</span>
+          </label>
+          <button class="btn btn--primary btn--block magnetic" type="submit">
+            <span data-i18n="form.submit">Enviar solicitud</span>
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="#top" aria-label="Xeniun — inicio">
+            <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#mark"/></svg>
+            <span class="brand__word">XENIUN</span>
+          </a>
+          <p data-i18n="footer.tagline">Investigación, desarrollo e innovación tecnológica.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Pie de página">
+          <a href="#capacidades" data-i18n="nav.capabilities">Capacidades</a>
+          <a href="#metodo" data-i18n="nav.method">Método</a>
+          <a href="#sectores" data-i18n="nav.sectors">Sectores</a>
+          <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+          <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <div class="footer__meta">
+          <a href="mailto:info@xeniun.com">info@xeniun.com</a>
+          <span data-i18n="contact.city">Santo Domingo, República Dominicana</span>
+          <a href="#top" class="mono footer__top-link" data-i18n="footer.top">Volver arriba ↑</a>
+        </div>
+      </div>
+      <p class="footer__word" aria-hidden="true">XENIUN</p>
+      <div class="footer__bottom mono">
+        <span>© <span id="year">2026</span> Xeniun SRL. <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
+        <span>I+D+i · Santo Domingo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/scene.min.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
